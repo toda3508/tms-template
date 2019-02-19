@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-{{#if_eq isRoute true}}
+{{#if_eq isRouter true}}
 import router from './router';
 import { sync } from 'vuex-router-sync'
 {{/if_eq}}
@@ -30,7 +30,7 @@ Vue.use(ElementUI, {
 Vue.use(TMS_COMPONENT)
 
 new Vue({
-  {{#if_eq isRoute true}}
+  {{#if_eq isRouter true}}
   router,
   {{/if_eq}}
   {{#if_eq isVuex true}}

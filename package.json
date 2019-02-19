@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    {{#if_eq isRoute true}}
+    {{#if_eq isRouter true}}
     "vue-router": "^3.0.1",
     {{/if_eq}}
     {{#if_eq isVuex true}}

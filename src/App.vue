@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    {{#if_eq isRoute true}}
+    {{#if_eq isRouter true}}
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
     {{/if_eq}}
     
-    {{#unless_eq isRoute true}}
+    {{#unless_eq isRouter true}}
     <page></page>
     {{/unless_eq}}
 
